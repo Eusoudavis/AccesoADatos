@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AccesoADatos.iml" filepath="$PROJECT_DIR$/.idea/AccesoADatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binarios/Binarios.iml" filepath="$PROJECT_DIR$/Binarios/Binarios.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileReader/FileReader.iml" filepath="$PROJECT_DIR$/FileReader/FileReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileWriter/FileWriter.iml" filepath="$PROJECT_DIR$/FileWriter/FileWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/ManejoDeFicheiros/ManejoDeFicheiros.iml" filepath="$PROJECT_DIR$/ManejoDeFicheiros/ManejoDeFicheiros.iml" />
