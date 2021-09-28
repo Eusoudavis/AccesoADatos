@@ -13,34 +13,31 @@ import java.util.Scanner;
 public class EX2 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        String base = "";
-        String nome, apelido;
+        String nome = "";
+        int idade = 0;
         System.out.println("Introuce o teu nome: ");
         nome = sc.nextLine();
-        System.out.println("Escriba o seu apelido: ");
-        apelido = sc.nextLine();
+        System.out.println("Escriba a súa idade: ");
+        idade = sc.nextInt();
 
         try {
             File f = new File("datos.txt");
             if (f.exists()){
-                FileWriter fw = new FileWriter(f);
-               // BufferedWriter bw = new BufferedWriter(fw);
-               // for (int i=0; i<base.length();i++) {
-                    fw.write(nome + " " + apelido);
-                  //  fw.write(apelido);
-
-                //}
+                FileWriter fw = new FileWriter(f, true);
+                BufferedWriter bw = new BufferedWriter(fw);
+                    bw.write("Nome " +nome + " idade " + idade + "\n");
+                    bw.close();
             }else {
                 f.createNewFile();
-
+                FileWriter fw = new FileWriter(f);
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write("Nome " +nome + " idade " + idade + "\n");
+                bw.close();
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Erro de entrada ou saída de datos ");
         }finally {
-
+            System.out.println("Fin de programa");
         }
-
-
     }
-
 }

@@ -5,32 +5,45 @@ Para simplificar sopuñemos que cada palabra está separada de outra por
 un único espazo en blanco ou por un cambio de líña.*/
 
 import java.io.*;
+import java.util.Scanner;
 
 public class EX3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println("Vamos a leer o ficheiro carta.txt. ");
 
+        String espazo ="";
+        int palabras = 0;
+        int caracteres = 0;
+        int liñas = 0;
         String separador = File.separator;
         File f;
-        FileReader fr;
         BufferedReader br = null;
-        String ruta = "C:\\Users\\david\\Desktop\\ACCESO A DATOS";
+        String ruta = "C:" + separador + "Users" + separador + "david" + separador + "Desktop" + separador + "ACCESO A DATOS";
 
-        try {
-            f = new File(ruta + separador + "carta.txt");
-            if (f.exists()){
-                fr = new FileReader(f);
+        f = new File(ruta + separador + "carta.txt");
+        Scanner sc = new Scanner(f);
+
+            try {
+               if (f.exists()){
+                   while (sc.hasNext()) {
+                       caracteres = caracteres + sc.next().length();
+                       palabras++;
+
+                FileReader fr = new FileReader(f);
                 br = new BufferedReader(fr);
-                String Contido;
-                while((Contido = br.readLine())!= null){
-                    System.out.println(Contido);
-                }
-
+                    while ((espazo = br.readLine()) != null) {
+                        liñas++;
+                    }
+                    br.close();
+                System.out.println("Numero de lineas: " + liñas);
+                System.out.println("Numero de palabras: " + palabras);
+                System.out.println("Numero de caracteres: " + caracteres);}}
+            } catch (FileNotFoundException e) {
+                System.out.println("Arquivo non atopado");
+            } catch (IOException e) {
+                System.out.println("Erro de lectura");
+            }finally {
+                System.out.println("Fin de programa");
+            }
         }
-
-    } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }}
+    }
