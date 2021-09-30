@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Binarios" />
         <module name="ManejoDeFicheiros" />
+        <module name="FileWriter" />
+        <module name="Binarios" />
         <module name="TratarExcepcións" />
+        <module name="Serializacion" />
         <module name="FileReader" />
         <module name="TAREFA1" />
-        <module name="FileWriter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="FileReader" target="15" />
       <module name="FileWriter" target="15" />
       <module name="ManejoDeFicheiros" target="15" />
+      <module name="Serializacion" target="15" />
       <module name="TAREFA1" target="15" />
       <module name="TratarExcepcións" target="15" />
     </bytecodeTargetLevel>

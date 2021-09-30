@@ -35,9 +35,9 @@ public class EX3 {
                         liñas++;
                     }
                     br.close();
-                System.out.println("Numero de lineas: " + liñas);
-                System.out.println("Numero de palabras: " + palabras);
-                System.out.println("Numero de caracteres: " + caracteres);}}
+                System.out.println("Número de lineas: " + liñas);
+                System.out.println("Número de palabras: " + palabras);
+                System.out.println("Número de caracteres: " + caracteres);}}
             } catch (FileNotFoundException e) {
                 System.out.println("Arquivo non atopado");
             } catch (IOException e) {
