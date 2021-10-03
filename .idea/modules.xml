@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/FileWriter/FileWriter.iml" filepath="$PROJECT_DIR$/FileWriter/FileWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/ManejoDeFicheiros/ManejoDeFicheiros.iml" filepath="$PROJECT_DIR$/ManejoDeFicheiros/ManejoDeFicheiros.iml" />
       <module fileurl="file://$PROJECT_DIR$/TAREFA1/TAREFA1.iml" filepath="$PROJECT_DIR$/TAREFA1/TAREFA1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TAREFA2/TAREFA2.iml" filepath="$PROJECT_DIR$/TAREFA2/TAREFA2.iml" />
       <module fileurl="file://$PROJECT_DIR$/TratarExcepcións/TratarExcepcións.iml" filepath="$PROJECT_DIR$/TratarExcepcións/TratarExcepcións.iml" />
     </modules>
   </component>
