@@ -7,7 +7,7 @@ public class LecturaEscritura {
     public static void main(String[] args) {
 
         FileOutputStream fs = null;
-        ObjectOutputStream os = null;
+        Cabecera os = null;
 
         Vehiculo vehiculo = new Vehiculo();
         Scanner sc = new Scanner(System.in);
@@ -28,13 +28,13 @@ public class LecturaEscritura {
         try{
             if (f.exists()){
                 fs= new FileOutputStream(f, true);
-                os= new ObjectOutputStream(fs);
+                os= new Cabecera(fs);
                 os.writeObject(vehiculo);
             }else {
                 f.createNewFile();
                 fs= new FileOutputStream(f);
-                os= new ObjectOutputStream(fs);
-                os.writeObject(vehiculo);
+                ObjectOutputStream oso= new ObjectOutputStream(fs);
+                oso.writeObject(vehiculo);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -45,12 +45,8 @@ public class LecturaEscritura {
         try {
             FileInputStream fi = new FileInputStream(f);
             ObjectInputStream oi = new ObjectInputStream(fi);
-
-            while (true){
-                Vehiculo vehiculo1 = (Vehiculo) oi.readObject();
-                System.out.println(vehiculo1);
-            }
-
+            Vehiculo vehiculo1 = (Vehiculo) oi.readObject();
+            System.out.println(vehiculo1);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

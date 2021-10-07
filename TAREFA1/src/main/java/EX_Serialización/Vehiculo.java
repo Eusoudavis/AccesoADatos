@@ -5,8 +5,8 @@ import java.io.Serializable;
 
 public class Vehiculo implements Serializable {
     private static final long serialVersionUID = 1L;
-    String matricula, marca, modelo;
-    transient double deposito;
+    protected String matricula, marca, modelo;
+    protected transient double deposito;
 
     public Vehiculo(String matricula, String marca, String modelo) {
         this.matricula = matricula;

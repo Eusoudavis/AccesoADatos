@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ManejoDeFicheiros" />
+        <module name="Aleatorios" />
         <module name="FileWriter" />
         <module name="Binarios" />
         <module name="TratarExcepcións" />
@@ -17,6 +18,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Aleatorios" target="15" />
       <module name="Binarios" target="15" />
       <module name="FileReader" target="15" />
       <module name="FileWriter" target="15" />
