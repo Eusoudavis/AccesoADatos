@@ -45,10 +45,13 @@ public class LecturaEscritura {
         try {
             FileInputStream fi = new FileInputStream(f);
             ObjectInputStream oi = new ObjectInputStream(fi);
-            System.out.println(vehiculo);
+            Vehiculo vehiculo1 = (Vehiculo) oi.readObject();
+            System.out.println(vehiculo1);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
