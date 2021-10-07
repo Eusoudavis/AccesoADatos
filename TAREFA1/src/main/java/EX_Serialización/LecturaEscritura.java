@@ -33,8 +33,8 @@ public class LecturaEscritura {
             }else {
                 f.createNewFile();
                 fs= new FileOutputStream(f);
-                os= new Cabecera(fs);
-                os.writeObject(vehiculo);
+                ObjectOutputStream oso= new ObjectOutputStream(fs);
+                oso.writeObject(vehiculo);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
