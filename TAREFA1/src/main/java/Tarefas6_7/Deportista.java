@@ -3,8 +3,8 @@ package Tarefas6_7;
 import lombok.Data;
 
 import java.io.Serializable;
-@Data
-public class Deportista{
+//@Data
+/*public class Deportista{
     private String nome;
     private int idade;
     private double peso;
@@ -55,4 +55,4 @@ public class Deportista{
     public static double getMediaEstatura() {
         return mediaEstatura;
     }
-}
+}*/

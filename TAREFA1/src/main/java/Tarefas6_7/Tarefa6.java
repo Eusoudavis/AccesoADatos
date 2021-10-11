@@ -12,7 +12,7 @@ Implementa un programa donde se cree un fluxo de texto de entrada, a partir do c
 scanner, lemos os datos do deportista, amosamolos por pantalla.
 Ao final aparecerán os valores medios da idade, o peso e a estatura. Pedimos algo do estilo:*/
 public class Tarefa6 {
-    public static void main(String[] args) throws FileNotFoundException {
+   /* public static void main(String[] args) throws FileNotFoundException {
         String separator = File.separator;
         String path = "deportistas.txt";
         File f = null;
@@ -49,7 +49,7 @@ public class Tarefa6 {
         }
 
 
-    }
+    }*/
         }
  /*fs = new FileInputStream("deportistas.txt");
          os = new ObjectInputStream(fs);

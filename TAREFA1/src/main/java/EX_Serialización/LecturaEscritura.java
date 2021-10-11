@@ -1,5 +1,5 @@
 package EX_Serialización;
-
+/*
 import java.io.*;
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ public class LecturaEscritura {
     public static void main(String[] args) {
 
         FileOutputStream fs = null;
-        Cabecera os = null;
+        MiObjectOuputStream os = null;
 
         Vehiculo vehiculo = new Vehiculo();
         Scanner sc = new Scanner(System.in);
@@ -28,13 +28,15 @@ public class LecturaEscritura {
         try{
             if (f.exists()){
                 fs= new FileOutputStream(f, true);
-                os= new Cabecera(fs);
+                os= new MiObjectOuputStream(fs);
                 os.writeObject(vehiculo);
+                os.close();
             }else {
                 f.createNewFile();
                 fs= new FileOutputStream(f);
                 ObjectOutputStream oso= new ObjectOutputStream(fs);
                 oso.writeObject(vehiculo);
+                oso.close();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -55,4 +57,4 @@ public class LecturaEscritura {
             e.printStackTrace();
         }
     }
-}
+}*/
