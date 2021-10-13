@@ -22,7 +22,7 @@ public class Ej02ClaveAutoIncrementable {
 	
 	public static void main(final String[] args) {
 		
-		File f = new File("NUEVODIR\\\\alumnos.DAT");
+		File f = new File("alumnos.DAT.txt");
 		
 		int opcion;
 		do{
@@ -180,7 +180,6 @@ public class Ej02ClaveAutoIncrementable {
 						esta = true;
 					}
 				}
-
 				if (esta==false)
 					System.out.println("\nAlumno inexistente");
 

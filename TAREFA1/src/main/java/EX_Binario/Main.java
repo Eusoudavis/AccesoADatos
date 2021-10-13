@@ -25,30 +25,24 @@ public class Main {
                 case 1:
                     if(f.exists()){
                         System.out.println("banco.txt existe");
-                        altaExiste();
+                        altaExiste(f);
                     }else{
                         System.out.println("banco.txt non existe");
-                        altaNonExiste();
+                        altaNonExiste(f);
                     }
                     break;
                 case 2:
-                    buscaElimina();
+                    buscaElimina(f);
                     break;
                 case 3:
-                    ler();
+                    ler(f);
                     break;
             }
-
         }while (opcion!=4);
-
-
     }
 
-
-
-    public static void altaExiste(){
+    public static void altaExiste(File f){
         ObjectOutputStream objectOutputStream = null;
-        File f = new File("banco.dat");
         Lista.add(new Cliente("78800199Z","David",7,8,1994,100));
         Lista.add(new Cliente("78800199J","Javier",18,2,1988,100));
 
@@ -63,15 +57,11 @@ public class Main {
             }
         }
 
-
-    public static void altaNonExiste() throws IOException {
-        ObjectOutputStream objectOutputStream = null;
-        File f = new File("banco.dat");
+    public static void altaNonExiste(File f) throws IOException {
         f.createNewFile();
        Lista.add(new Cliente("80008687l","Tono",28,12,1994,100));
        Lista.add(new Cliente("12345678J","Silvia",22,11,1996,100));
 
-        //Lista.sort();
        try{
             FileOutputStream fs = new FileOutputStream(f, true);
             ObjectOutputStream os = new ObjectOutputStream(fs);
@@ -83,10 +73,9 @@ public class Main {
         }
     }
 
-    public static void ler() throws FileNotFoundException {
+    public static void ler(File f) throws FileNotFoundException {
         FileInputStream fi = null;
         ObjectInputStream oi = null;
-        File f = new File("banco.dat");
        try{
             fi = new FileInputStream(f);
             oi = new ObjectInputStream(fi);
@@ -108,19 +97,45 @@ public class Main {
         }
     }
 
-    public static void buscaElimina() throws FileNotFoundException {
-        ler();
+    public static void buscaElimina(File f) throws FileNotFoundException {
+
+        System.out.println("Introducir un dos seguintes DNI: ");
+
+        ler(f);
 
         Scanner sc = new Scanner(System.in);
         String dniBusqueda = sc.nextLine();
 
+
         for (int i = 0; i < Lista.size(); i++){
             if (Lista.get(i).getDNI().equals(dniBusqueda)){
-                System.out.println("Existe");
                 Lista.remove(i);
-            }
-                System.out.println(Lista.toArray())
+                System.out.println("Borrado");
+
+                List<Cliente> copia = new ArrayList<Cliente>();
+                f.delete();
+                for (Cliente cli: copia
+                ) {
+                    try{
+                        FileOutputStream fs = new FileOutputStream(f, true);
+                        ObjectOutputStream os = new ObjectOutputStream(fs);
+                        os.writeObject(cli);
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }                }
                 ;}
+            }
+        try{
+            FileOutputStream fs = new FileOutputStream(f);
+            ObjectOutputStream os = new ObjectOutputStream(fs);
+            os.writeObject(Lista);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         }
     }
