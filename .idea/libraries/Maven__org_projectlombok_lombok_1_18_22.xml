@@ -8,6 +8,7 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22-sources.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/A DE ANTONIO/Tema 2/db4o-8.0-java/db4o-8.0/lib/db4o-8.0.249.16098-osgi-java5.jar!/src" />
     </SOURCES>
   </library>
 </component>

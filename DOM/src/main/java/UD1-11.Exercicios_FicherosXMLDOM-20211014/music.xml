@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<musics>	
+	 <music category = "rock">
+	  <nombre> Estilo Jiangnan </ nombre>
+	 <author>PSY</author>
+	  <condado> Corea </ condado>
+	 <date>20121205</date>
+	</music>
+	
+	 <music category = "rock">
+	  <nombre> estilo de portaaviones </ nombre>
+	  <autor> usuario de Internet </ autor>
+	  <condado> China </ condado>
+	 <date>20121205</date>
+	</music>
+</musics>

@@ -12,6 +12,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File f = new File("banco.dat");
 
+        ler(f);
+
         int opcion;
         do {
             Scanner sc = new Scanner(System.in);
@@ -124,8 +126,9 @@ public class Main {
                         e.printStackTrace();
                     } catch (IOException e) {
                         e.printStackTrace();
-                    }                }
-                ;}
+                    }
+                }
+                }
             }
         try{
             FileOutputStream fs = new FileOutputStream(f);

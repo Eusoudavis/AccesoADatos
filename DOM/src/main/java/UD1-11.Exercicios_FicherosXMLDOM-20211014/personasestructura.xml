@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Personas>
+<persona>
+<clave>1</clave>
+<nombre>antonio</nombre>
+<edad>23</edad>
+</persona>
+<persona>
+<clave>2</clave>
+<nombre>pepe</nombre>
+<edad>45</edad>
+</persona>
+</Personas>

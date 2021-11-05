@@ -1,5 +1,5 @@
 package EX_Serialización;
-/*
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -57,4 +57,4 @@ public class LecturaEscritura {
             e.printStackTrace();
         }
     }
-}*/
+}

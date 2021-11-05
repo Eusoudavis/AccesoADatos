@@ -8,23 +8,34 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ManejoDeFicheiros" />
+        <module name="CRUD" />
+        <module name="DOM" />
         <module name="Aleatorios" />
         <module name="FileWriter" />
         <module name="Binarios" />
         <module name="TratarExcepcións" />
         <module name="Serializacion" />
         <module name="FileReader" />
+        <module name="Sax" />
         <module name="TAREFA1" />
+        <module name="TAREFA2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Aleatorios" target="15" />
       <module name="Binarios" target="15" />
+      <module name="CRUD" target="15" />
+      <module name="db40" target="15" />
+      <module name="db400" target="15" />
+      <module name="DOM" target="15" />
       <module name="FileReader" target="15" />
       <module name="FileWriter" target="15" />
       <module name="ManejoDeFicheiros" target="15" />
+      <module name="Sax" target="15" />
       <module name="Serializacion" target="15" />
       <module name="TAREFA1" target="15" />
+      <module name="TAREFA2" target="15" />
+      <module name="TEMA2" target="15" />
       <module name="TratarExcepcións" target="15" />
     </bytecodeTargetLevel>
   </component>

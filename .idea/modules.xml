@@ -5,11 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/AccesoADatos.iml" filepath="$PROJECT_DIR$/.idea/AccesoADatos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Aleatorios/Aleatorios.iml" filepath="$PROJECT_DIR$/Aleatorios/Aleatorios.iml" />
       <module fileurl="file://$PROJECT_DIR$/Binarios/Binarios.iml" filepath="$PROJECT_DIR$/Binarios/Binarios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CRUD/CRUD.iml" filepath="$PROJECT_DIR$/CRUD/CRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DOM/DOM.iml" filepath="$PROJECT_DIR$/DOM/DOM.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileReader/FileReader.iml" filepath="$PROJECT_DIR$/FileReader/FileReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileWriter/FileWriter.iml" filepath="$PROJECT_DIR$/FileWriter/FileWriter.iml" />
       <module fileurl="file://$PROJECT_DIR$/ManejoDeFicheiros/ManejoDeFicheiros.iml" filepath="$PROJECT_DIR$/ManejoDeFicheiros/ManejoDeFicheiros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sax/Sax.iml" filepath="$PROJECT_DIR$/Sax/Sax.iml" />
       <module fileurl="file://$PROJECT_DIR$/Serializacion/Serializacion.iml" filepath="$PROJECT_DIR$/Serializacion/Serializacion.iml" />
       <module fileurl="file://$PROJECT_DIR$/TAREFA1/TAREFA1.iml" filepath="$PROJECT_DIR$/TAREFA1/TAREFA1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TAREFA2/TAREFA2.iml" filepath="$PROJECT_DIR$/TAREFA2/TAREFA2.iml" />
       <module fileurl="file://$PROJECT_DIR$/TratarExcepcións/TratarExcepcións.iml" filepath="$PROJECT_DIR$/TratarExcepcións/TratarExcepcións.iml" />
     </modules>
   </component>
